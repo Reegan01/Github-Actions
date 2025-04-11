@@ -20,6 +20,6 @@ jobs:
 
     steps:
       - name: Welcome
-        run: echo "Welcome from ${{ input.name }}"
+        run: echo "Welcome from ${{ inputs.name }}"
   
 
