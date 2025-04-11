@@ -9,15 +9,15 @@ on:
         default: 'Reegan'
 
 jobs:
-  Job1:
+  Environment-Setup:
     runs-on: ubuntu-latest
 
     steps:
       - name: Greetings
         run: echo "Greetings from ${{ inputs.name }}"
-  Job2:
+  Building-Application:
     runs-on: ubuntu-latest
-    needs: Job1
+    needs: Environment-Setup
     steps:
       - name: Welcome
         run: echo "Welcome from ${{ inputs.name }}"
