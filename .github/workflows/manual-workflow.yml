@@ -9,10 +9,17 @@ on:
         default: 'Reegan'
 
 jobs:
-  manual:
+  Job1:
     runs-on: ubuntu-latest
 
     steps:
       - name: Greetings
         run: echo "Greetings from ${{ inputs.name }}"
+  Job2:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Welcome
+        run: echo "Welcome from ${{ input.name }}"
+  
 
